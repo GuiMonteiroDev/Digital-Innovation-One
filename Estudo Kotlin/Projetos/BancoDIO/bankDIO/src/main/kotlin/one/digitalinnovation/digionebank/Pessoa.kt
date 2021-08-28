@@ -1,14 +1,17 @@
 package one.digitalinnovation.digionebank
 
 class Pessoa {
-    val nome:String = "Guilherme"
-    val cpf:String  = "456.598.678.71"
-    val email:String = "guimontero.rodrigues@gmail.com"
+    var nome:String = "Guilherme"
+    var email:String = "guimontero.rodrigues@gmail.com"
+    var cpf:String  = "456.598.678-71"
+    private set
+
+    constructor()
+
+    fun uneInfos() = "$nome, $email, $cpf"
 }
 
 fun main(){
-    var cliente = Pessoa()
-    println(cliente.nome)
-    println(cliente.cpf)
-    println(cliente.email)
+    val cliente = Pessoa()
+    println(cliente.uneInfos())
 }
