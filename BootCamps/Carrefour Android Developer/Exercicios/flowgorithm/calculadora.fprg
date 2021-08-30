@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Guilherme"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-28 06:34:37 "/>
+        <attribute name="created" value="R3VpbGhlcm1lO0dVSUxIRVJNRTsyMDIxLTA4LTI4OyIwNTo1MTo0NSAiOzI4MDI="/>
+        <attribute name="edited" value="R3VpbGhlcm1lO0dVSUxIRVJNRTsyMDIxLTA4LTI4OyIwNjozNDozNyAiOzE7MjkxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Som, Sub, Mult, Div, n1, n2, resultado" type="Real" array="False" size=""/>
+            <declare name="oper, conterro" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a opera&#231;ao desejada:&#13;&#10;&#13;&#10;1 - Soma&#13;&#10;2 - Subtra&#231;ao&#13;&#10;3 - Multiplica&#231;ao&#13;&#10;4 - Divisao&quot;" newline="True"/>
+            <input variable="oper"/>
+            <if expression="oper == 1">
+                <then>
+                    <output expression="&quot;Soma - Digite o valor 1 da soma: &quot;" newline="True"/>
+                    <input variable="n1"/>
+                    <output expression="&quot;Otimo! agora digite o valor 2 da soma: &quot;" newline="True"/>
+                    <input variable="n2"/>
+                    <assign variable="resultado" expression="n1 + n2"/>
+                    <output expression="&quot;O resultado da soma &#233;: &quot;" newline="True"/>
+                    <output expression="resultado" newline="False"/>
+                </then>
+                <else>
+                    <if expression="oper == 2">
+                        <then>
+                            <output expression="&quot;Subtra&#231;ao - Digite o valor 1 da subtra&#231;ao: &quot;" newline="True"/>
+                            <input variable="n1"/>
+                            <output expression="&quot;Subtra&#231;ao - Digite o valor 2 da subtra&#231;ao: &quot;" newline="True"/>
+                            <input variable="n2"/>
+                            <assign variable="resultado" expression="n1 - n2"/>
+                            <output expression="&quot;O resultado da subtra&#231;ao &#233;: &quot;" newline="True"/>
+                            <output expression="resultado" newline="False"/>
+                        </then>
+                        <else>
+                            <if expression="oper == 3">
+                                <then>
+                                    <output expression="&quot;Multiplica&#231;ao - Digite o valor 1 da Multiplica&#231;ao: &quot;" newline="True"/>
+                                    <input variable="n1"/>
+                                    <output expression="&quot;Multiplica&#231;ao - Digite o valor 2 da Multiplica&#231;ao: &quot;" newline="True"/>
+                                    <input variable="n2"/>
+                                    <assign variable="resultado" expression="n1 * n2"/>
+                                    <output expression="&quot;O resultado da multiplica&#231;ao &#233;: &quot;" newline="True"/>
+                                    <output expression="resultado" newline="False"/>
+                                </then>
+                                <else>
+                                    <if expression="oper == 4">
+                                        <then>
+                                            <output expression="&quot;Divisao - Digite o valor 1 da Divisao: &quot;" newline="True"/>
+                                            <input variable="n1"/>
+                                            <output expression="&quot;Divisao - Digite o valor 2 da Divisao: &quot;" newline="True"/>
+                                            <input variable="n2"/>
+                                            <assign variable="resultado" expression="n1 / n2"/>
+                                            <output expression="&quot;O resultado da Divisao &#233;: &quot;" newline="True"/>
+                                            <output expression="resultado" newline="False"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Insira uma operacao valida&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
